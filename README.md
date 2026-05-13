@@ -2,6 +2,7 @@
 
 ## 🧠 Challenges Covered
 - **FutureVera** — space-themed web enumeration (flag found)
+- **Sudo Make Me a Sandwich** — Privilege escalation from Picoctf/CyLab (flag found)
 
 ## 📁 Structure
 Each challenge has its own folder:
