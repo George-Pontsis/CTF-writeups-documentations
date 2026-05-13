@@ -8,7 +8,7 @@ The goal was to gain root access and read the protected `flag.txt` file.
 
 ---
 
-# Initial Access
+## Initial Access
 
 I first connected to the target machine via SSH.
 
@@ -18,7 +18,7 @@ ssh -p 65323 ctf-player@green-hill.picoctf.net
 
 ---
 
-# Enumeration
+## Enumeration
 
 After logging in, I listed the files in the current directory.
 
@@ -28,7 +28,7 @@ ls
 Output:
 - flag.txt
 
-# Attempting to Read the Flag
+## Attempting to Read the Flag
 
 I initially tried reading the flag directly
 
@@ -56,7 +56,7 @@ At this point, I wanted to discover which commands the current user was allowed 
 
 ---
 
-# Enumerating Sudo Privileges
+## Enumerating Sudo Privileges
 
 I used:
 
@@ -84,7 +84,7 @@ This revealed a critical privilege escalation vector:
 ---
 
 
-# Privilege Escalation via Emacs
+## Privilege Escalation via Emacs
 
 I researched emacs and learned that it can spawn a shell.
 
@@ -109,7 +109,7 @@ This spawned an interactive shell.
 ---
 
 
-# Verifying Root Access
+## Verifying Root Access
 
 To verify the privilege escalation worked, I ran:
 ```
@@ -126,7 +126,7 @@ The shell inherited the elevated privileges from sudo emacs, giving me a root sh
 ---
 
 
-# Capturing the Flag
+## Capturing the Flag
 
 Now that I had root access, I successfully read the flag.
 ```
@@ -139,7 +139,7 @@ cat flag.txt
 ---
 
 
-# Key Takeaways
+## Key Takeaways
 
 - Misconfigured sudo permissions can lead to full system compromise
 - Some applications (like emacs, vim, less, etc.) can spawn shells
@@ -149,7 +149,7 @@ cat flag.txt
 ---
 
 
-# Skills Learned
+## Skills Learned
 
 - **Linux Enumeration**
 - **Sudo Privilege Escalation**
@@ -161,7 +161,7 @@ cat flag.txt
 ---
 
 
-# References
+## References
 
 - GTFOBins — https://gtfobins.github.io/gtfobins/emacs/
 - GNU Emacs Documentation — https://www.gnu.org/software/emacs/
@@ -170,7 +170,7 @@ cat flag.txt
 ---
 
 
-# Final Thoughts
+## Final Thoughts
 
 This was a great beginner-friendly Linux privilege escalation challenge that demonstrated how dangerous insecure sudo configurations can be.
 
