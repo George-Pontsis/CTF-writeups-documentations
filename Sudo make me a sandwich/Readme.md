@@ -92,7 +92,7 @@ I launched Emacs with sudo privileges:
 ```
 sudo emacs
 ```
-![emacs](Images/Emacs)
+![emacs](Images/Emacs.png)
 
 
 Inside Emacs:
