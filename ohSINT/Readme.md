@@ -26,7 +26,7 @@ cd ~/Pictures
 exiftool WindowsXP_1551719014755.jpg
 ```
 
-![exiftool output](screenshots/01-exiftool-output.png)
+![exiftool output](Screenshots/01-exiftool-output.png)
 
 The output revealed:
 - **GPS Latitude:** 54 deg 17' 41.27" N
@@ -35,7 +35,7 @@ The output revealed:
 
 Opening the image itself in Gwenview just showed a Windows XP–style "Bliss" wallpaper (green hills, blue sky) — a red herring, since the real clues were in the metadata, not the picture.
 
-![image contents](screenshots/02-image-contents.png)
+![image contents](Screenshots/02-image-contents.png)
 
 ---
 
@@ -44,8 +44,8 @@ Opening the image itself in Gwenview just showed a Windows XP–style "Bliss" wa
 
 The `Copyright` field from the EXIF data (`OWoodflint`) looked like a username. Searching for it on Google led me to an X (Twitter) account, [@OWoodflint](https://x.com/OWoodflint), whose profile picture is a cat.
 
-![google search leading to twitter](screenshots/03-x-search-result.png)
-![twitter profile](screenshots/04-x-profile.png)
+![google search leading to twitter](Screenshots/03-x-search-result.png)
+![twitter profile](Screenshots/04-x-profile.png)
 
 ---
 
@@ -59,11 +59,11 @@ On the same X profile, one of the two posts read:
 
 A BSSID is the MAC address of a wireless access point, and access points can be geolocated using wardriving databases. I took this BSSID to [WiGLE.net](https://wigle.net) and searched it under **Network Search**.
 
-![wigle search](screenshots/05-wigle-search.png)
+![wigle search](Screenshots/05-wigle-search.png)
 
 The result mapped the access point to a location in **London**.
 
-![wigle map result](screenshots/06-wigle-map.png)
+![wigle map result](Screenshots/06-wigle-map.png)
 
 ---
 
@@ -79,7 +79,7 @@ The same WiGLE.net query that resolved the location also returned the network's 
 
 Going back to Google and searching the username `OWoodflint` more broadly turned up a GitHub profile with a repository called `people_finder`. Its README listed a contact email address.
 
-![github repo readme](screenshots/07-github-readme.png)
+![github repo readme](Screenshots/07-github-readme.png)
 
 ---
 
@@ -97,7 +97,7 @@ The GitHub README also linked to a personal WordPress blog. On the blog's author
 
 > Im in New York right now, so I will update this site right away with new photos!
 
-![wordpress blog](screenshots/08-wordpress-blog.png)
+![wordpress blog](Screenshots/08-wordpress-blog.png)
 
 ---
 
@@ -106,13 +106,13 @@ The GitHub README also linked to a personal WordPress blog. On the blog's author
 
 Nothing on the rendered blog page hinted at a password. Right-clicking and selecting **View Page Source** revealed a hidden paragraph styled with white text (`color:#ffffff`) on a white background — invisible on the page itself but plainly visible in the raw HTML.
 
-![page source password](screenshots/09-page-source-password.png)
+![page source password](Screenshots/09-page-source-password.png)
 
 ---
 
 ## Room Completed
 
-![room completed 100%](screenshots/10-room-completed.png)
+![room completed 100%](Screenshots/10-room-completed.png)
 
 ---
 
